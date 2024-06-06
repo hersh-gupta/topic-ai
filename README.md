@@ -4,10 +4,30 @@ Topic Generator is a Python package that generates topics from open-ended text d
 ## Features 
 - Generates topics from text data using OpenAI GPT-4o
 - Allows users to specify system messages and examples
+- More flexible than traditional topic modeling software
+
+# Showcase
+Below is an example of topics generated from fabricated employee survey comments: 
+
+```python
+prompt = "You receive open-ended comments from an employee survey at a DC agency. 
+    Your job is to help the user parse them and identify topics from the comments. 
+    Limit your response to a few words or comma separated phrases."
+```
+
+**Output:**
+
+| ID | Comments                                                                                    | Topics                                                                                     |
+|----|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 1  | The agency provides good benefits but there is little room for career growth.               | Opportunities for Advancement, Employee Benefits                                           |
+| 2  | I feel proud to serve the community through my work at this agency.                         | Employee pride, community service                                                          |
+| 3  | The workload is overwhelming at times due to understaffing in our department.               | Workload, understaffing                                                                    |
+| 4  | My supervisor is supportive and encourages me to develop new skills.                        | Supportive supervisor, skill development encouragement                                     |
+
 
 ## Installation
 Using `pip`:
-```
+```python
 pip install git+https://github.in.dc.gov/OCTO/topic-ai.git
 ```
 
@@ -23,15 +43,16 @@ Before using the Topic Generator, you need to set the following environment vari
 - `AZURE_OPENAI_ENDPOINT`: The Azure endpoint for OpenAI.
 
 You can set these environment variables using the following commands in your terminal or command prompt:
-```
+```cmd
 set OPENAI_API_KEY=your_api_key
 set OPENAI_AZURE_ENDPOINT=your_azure_endpoint
 ```
 Replace `your_api_key` and `your_azure_endpoint` with your actual API key and Azure endpoint, respectively.
+Make sure to also specify your `api_version` and `model` in the initial setup. 
 
 ## Usage
 Here's an example of how to use the AI Topic Generator package:
-```
+```python
 from topic_ai import TopicAI
 
 # Create an instance of TopicAI

@@ -15,7 +15,7 @@ topic_ai.process_csv(
     output_column='Topics',
     system_message=
     '''
-    You receive open-ended comments from an employee survey at the District Department of Transportation(DDOT). 
+    You receive open-ended comments from an employee survey at a DC agency. 
     Your job is to help the user parse them and identify topics from the comments. 
     Limit your response to a few words or comma separated phrases.
     ''',

@@ -1,0 +1,42 @@
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Distribution files
+dist/
+build/
+*.egg-info/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS files
+.DS_Store
+
+# Sensitive information
+.env
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Test output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Example output files
+examples/output.csv

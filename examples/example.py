@@ -15,18 +15,20 @@ topic_ai.process_csv(
     output_column='Topics',
     system_message=
     '''
-    You receive open-ended comments from an employee survey at a DC agency. 
-    Your job is to help the user parse them and identify topics from the comments. 
-    Limit your response to a few words or comma separated phrases.
+    You receive open-ended comments from an employee survey at a government agency. 
+    Your job is to identify topics from the comments. 
+    Limit your response to a few words or phrases. Use commas to separate the topics. Do not use bullet points or numbed lists. Do not end sentences with periods and do not include quotation marks. 
+    If there is not enough information from the comments or the comments are simply "No" or "None", respond with "No topics identified".
     ''',
     pre_specified_topics=
     '''
     Use the following list of topics as a starting point: 
-    Work schedule and telework: Desire for more flexible work schedules and additional telework days due to physical and mental exhaustion from commuting.
-    Workplace environment and culture: Need for better communication, respect, and courtesy among staff and management, and addressing inappropriate comments and behavior.
-    Opportunities for advancement: Concerns about the slow and seemingly unfair process for career advancement within the agency.
-    Management and leadership: Issues with management and leadership, including lack of proper goal setting, accountability, and vision.
-    Training and development: Need for better training and development opportunities, including comprehensive systems, SOPs, and training on various processes.
-    HR processes: Concerns about slow and non-transparent HR processes, leading to loss of recruits and dissatisfaction among current employees.
-    Communication and collaboration: Need for better communication and collaboration within and between departments, and more trust and autonomy in areas of expertise.
+    Workplace environment and culture: Physical and social aspects of the workplace, including office layout, colleague interactions, and organizational culture.
+    Telework and work schedules: Flexibility and structure of work schedules, including telework policies and their impact on work-life balance.
+    Communication and transparency: Clarity and openness of communication within the organization, particularly from upper management.
+    Career advancement and opportunities: Processes and fairness of hiring, promotion, and career progression within the organization.
+    Training and professional development: Availability and quality of training and development opportunities for employees.
+    Compensation and benefits: Issues related to employee compensation, including salary disparities, cost-of-living adjustments, and benefits adequacy.
+    Mission and vision: Alignment of the organization's actions and decisions with its stated mission and vision.
+    IT and administrative processes: Efficiency and effectiveness of the organization's IT and administrative processes.
     ''')

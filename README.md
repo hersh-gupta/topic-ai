@@ -11,7 +11,7 @@ Below is an example of topics generated from fabricated employee survey comments
 
 ```python
 prompt = "You receive open-ended comments from an employee survey at a DC agency. 
-    Your job is to help the user parse them and identify topics from the comments. 
+    Your job is to identify topics from the comments. 
     Limit your response to a few words or comma separated phrases."
 ```
 
@@ -75,7 +75,7 @@ The process_csv method takes the following parameters:
 `system_message`: The system message to guide the topic extraction process.  
 `pre_specified_topics` (optional): A string containing pre-specified topics to use as a starting point for topic extraction.  
 `output_file` (optional): The path to the output CSV file to save the results. If not provided, the method will return a DataFrame with the results.  
-`output_column` (options, defaul 'Result'): 
+`output_column` (options, default 'Result'): The name of the column where the topics are written.
 
 ## Example
 An example script is provided in the [`examples/`](examples/) directory.

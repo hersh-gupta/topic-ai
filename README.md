@@ -28,7 +28,7 @@ prompt = "You receive open-ended comments from an employee survey at a governmen
 ## Installation
 Using `pip`:
 ```python
-pip install git+https://github.in.dc.gov/OCTO/topic-ai.git
+pip install git+https://github.com/hersh-gupta/topic-ai
 ```
 
 Alternatively, you can:

@@ -10,7 +10,7 @@ Topic Generator is a Python package that generates topics from open-ended text d
 Below is an example of topics generated from fabricated employee survey comments: 
 
 ```python
-prompt = "You receive open-ended comments from an employee survey at a DC agency. 
+prompt = "You receive open-ended comments from an employee survey at a government agency. 
     Your job is to identify topics from the comments. 
     Limit your response to a few words or comma separated phrases."
 ```
